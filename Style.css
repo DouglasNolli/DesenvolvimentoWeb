@@ -1,0 +1,253 @@
+/* --- CONFIGURAÇÃO DA PAGINA GERAL --- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+/* --- LAYOUT PRINCIPAL --- */
+.container {
+    width: 800px;
+    min-height: 1000px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 50px;
+    background-color: #526534;
+    background: linear-gradient(to left,#526534,#8d9e6f);
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --- TITULO PRINCIPAL --- */
+#titulo {
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+/* --- FORMULÁRIO, ENTRADA DE DADOS(INFORMAÇÕES) --- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.entrada_dados {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.descricao_input {
+    padding-left: 10px;
+}
+
+input {
+    width: 550px;
+    height: 50px;
+
+    padding-left: 10px;
+
+    border-radius: 20px;
+    border: solid white;
+    background-color: white;
+}
+
+/* --- BOTÃO DE SALVAMENTO META --- */
+#salvar_meta {
+    width: 150px;
+    height: 40px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #00C811;
+    color: white;
+
+    cursor: pointer;
+}
+
+#salvar_meta:hover {
+    transform: scale(0.98);
+}
+
+/* --- CAMPOS DE VALOR ATUAL ARRECADADO / VALOR META REGISTRADO */
+.valor_atual_arrecadado {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.valor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* --- BOTÃO FILTRO --- */
+.filtro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#filtro_letra {
+    width: 80px;
+    height: 45px;
+
+    padding: 0 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    background: white;
+    color: #333;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    appearance: none;
+    text-align: center;
+}
+
+/* --- CONFIGURAÇÃO DAS LISTAS DE METAS --- */
+#lista_metas {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* --- CONFIGURAÇÃO DO CARD DAS METAS --- */
+.meta-card {
+    width: 600px;
+    margin: 10px 0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #a8d5a2;
+    color: black;
+
+    border-radius: 20px;
+}
+
+
+/* LADO ESQUERDO */
+
+.meta-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.meta-numero {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* DIVISOR */
+
+.divisor {
+    width: 2px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* TEXTO */
+
+.meta-textos h3 {
+    margin: 5px 0;
+}
+
+.meta-textos .meta {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.meta-textos .atual {
+    color: red;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+/* --- AÇÃO(BOTÕES EDITAR / APAGAR --- */
+.meta-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+
+    border-radius: 20px;
+    border: 2px solid;
+
+    background: transparent;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* BT-EDITAR */
+
+.btn-editar {
+    border-color: blue;
+    color: blue;
+    background-color: white;
+}
+
+.btn-editar:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* BT-APAGAR */
+
+.btn-apagar {
+    border-color: red;
+    color: red;
+    background-color: white;
+}
+
+.btn-apagar:hover {
+    background-color: red;
+    color: white;
+}
+
+/* --- CONFIGURAÇÃO DO RELÓGIO --- */
+#relogio {
+    color: black;
+}
